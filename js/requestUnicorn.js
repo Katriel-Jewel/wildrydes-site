@@ -9,11 +9,11 @@ const AWS = require('aws-sdk');
 const ddb = new AWS.DynamoDB.DocumentClient();
 
 const fleet = [
-	{
-		Name: 'Katriel 1',
-		Color: 'Golden',
-		Gender: 'Male',
-	},
+ 	{
+ 		Name: 'Bucephalus',
+ 		Color: 'Golden',
+ 		Gender: 'Male',
+ 	},
 	{
 		Name: 'Scrappy',
 		Color: 'Mean Green',
@@ -22,18 +22,18 @@ const fleet = [
 	{
 		Name: 'Cosmo',
 		Color: 'Royal Blue',
-		Gender: 'Male',
-	},
-	{
-		Name: 'Katriel 2',
-		Color: 'White',
-		Gender: 'Male',
-	},
-	{
-		Name: 'Katriel 3',
-		Color: 'Yellow',
-		Gender: 'Female',
-	},
+ 		Gender: 'Male',
+ 	},
+ 	{
+ 		Name: 'Shadowfax',
+ 		Color: 'White',
+ 		Gender: 'Male',
+ 	},
+ 	{
+ 		Name: 'Rocinante',
+ 		Color: 'Yellow',
+ 		Gender: 'Female',
+ 	},
 ];
 
 exports.handler = (event, context, callback) => {
