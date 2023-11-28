@@ -42,13 +42,6 @@ let map;
         });
     }
 
-    //weather
-    L.control.weather({
-      apikey: {e75c6ee444deadbec00b9fe23763836f}
-      lang: "es",
-      units: "metric"
-    }).addTo(map);
-
     //  completeRequest
     //      a Unicorn has been dispatched to your location
     function completeRequest(result, pickupLocation) {
@@ -62,7 +55,7 @@ let map;
 
         console.log(pickupLocation);
         //  get the local weather, find nearby restaurants, movies
-        // getWeather(pickupLocation, unicorn)
+         getWeather(pickupLocation, unicorn)
 
         animateArrival(function animateCallback() {
             displayUpdate(unicorn.Name + ' has arrived. Giddy up!', unicorn.Color);
