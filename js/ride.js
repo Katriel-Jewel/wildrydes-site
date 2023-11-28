@@ -102,10 +102,10 @@ let map;
             WildRydes.marker  = L.marker([loc.coords.latitude, loc.coords.longitude]).addTo(map);
             var myIcon = L.icon({
                 iconUrl: 'images/unicorn-icon.png',
-                iconSize: [25, 25],
-                iconAnchor: [22, 24],
-                shadowSize: [25, 25],
-                shadowAnchor: [22, 24]
+                iconSize: [35, 35],
+                iconAnchor: [32, 34],
+                shadowSize: [35, 35],
+                shadowAnchor: [32, 34]
             });
             WildRydes.unicorn = L.marker([loc.coords.latitude, loc.coords.longitude], {icon: myIcon}).addTo(map);
             // WildRydes.marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
