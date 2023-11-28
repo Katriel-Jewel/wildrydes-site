@@ -122,7 +122,7 @@ let map;
 
                 popup
                     .setLatLng(e.latlng)
-                    .setContent("You clicked the map at " + e.latlng.toString())
+                    .setContent("Your chosen pickup location is at " + e.latlng.toString())
                     .openOn(map);
             }
         }
