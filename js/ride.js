@@ -44,7 +44,7 @@ let map;
 
     //weather
     L.control.weather({
-      apikey: {API_KEY}
+      apikey: {e75c6ee444deadbec00b9fe23763836f}
       lang: "es",
       units: "metric"
     }).addTo(map);
