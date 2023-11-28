@@ -108,9 +108,9 @@ let map;
                 shadowAnchor: [32, 34]
             });
             WildRydes.unicorn = L.marker([loc.coords.latitude, loc.coords.longitude], {icon: myIcon}).addTo(map);
-            // WildRydes.marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+            WildRydes.marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 
-            // var popup = L.popup();
+            var popup = L.popup();
             map.on('click', onMapClick);
 
             function onMapClick(e) {            //  TODO move to esri.js
@@ -120,10 +120,10 @@ let map;
 
                 WildRydes.marker  = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
 
-                // popup
-                //     .setLatLng(e.latlng)
-                //     .setContent("You clicked the map at " + e.latlng.toString())
-                //     .openOn(map);
+                popup
+                    .setLatLng(e.latlng)
+                    .setContent("You clicked the map at " + e.latlng.toString())
+                    .openOn(map);
             }
         }
     });
