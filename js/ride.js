@@ -108,7 +108,7 @@ let map;
                 shadowAnchor: [32, 34]
             });
             WildRydes.unicorn = L.marker([loc.coords.latitude, loc.coords.longitude], {icon: myIcon}).addTo(map);
-            WildRydes.marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+            //WildRydes.marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 
             var popup = L.popup();
             map.on('click', onMapClick);
@@ -122,7 +122,7 @@ let map;
 
                 popup
                     .setLatLng(e.latlng)
-                    .setContent("Your chosen pickup location is at " + e.latlng.toString())
+                    .setContent("Your chosen pickup is at:<br>" + e.latlng.toString())
                     .openOn(map);
             }
         }
