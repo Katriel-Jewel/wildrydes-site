@@ -42,6 +42,13 @@ let map;
         });
     }
 
+    //weather
+    L.control.weather({
+      apikey: {API_KEY}
+      lang: "es",
+      units: "metric"
+    }).addTo(map);
+
     //  completeRequest
     //      a Unicorn has been dispatched to your location
     function completeRequest(result, pickupLocation) {
