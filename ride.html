@@ -21,11 +21,6 @@
 </head>
 
 <body>
-    <!-- weather widget -->
-    <div>
-        <a class="weatherwidget-io" href="https://forecast7.com/en/32d78n96d80/dallas/" data-label_1="DALLAS" data-label_2="WEATHER" data-theme="candy" >DALLAS WEATHER</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');</script>
-    </div>
     <div class="info panel panel-default">
         <div class="panel-heading">
             <button id="request" class="btn btn-primary" disabled="disabled">Set pickup</button>
@@ -44,6 +39,12 @@
             </ol>
         </div>
     </div>
+
+    <!-- weather widget -->
+    <div>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/32d78n96d80/dallas/?unit=us" data-label_1="DALLAS" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="candy" >DALLAS WEATHER</a>
+    </div>
+    <!-- weather widget -->
 
     <div id="noApiMessage" class="configMessage" style="display: none;">
         <div class="backdrop"></div>
@@ -105,6 +106,7 @@
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
             integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
             crossorigin=""></script>
+    <script> !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');</script>
 </body>
 
 </html>
